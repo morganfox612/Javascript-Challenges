@@ -1,5 +1,15 @@
+// Reverse a string
+
+function reverseWord() {
+let str = prompt("Please enter a word or a phrase")
+reverseString = str.split("").reverse().join("")
+
+console.log(reverseString)
+}
+
 // FizzBuzz
 
+function fizzBuzz() {
 let i = 0
 integers = []
 
@@ -18,5 +28,20 @@ for (x of integers) {
   console.log("Fizz")
   } else {
   console.log(x)
+  }
+}
+}
+
+// Pig Latin
+
+let vowels = ['a', 'e', 'i', 'o', 'u']
+function pigLatin(string) {
+   str = prompt("Enter a word or a phrase")
+    let a = str.substr(1)
+    let b = str.charAt(0)
+    if(!(vowels.includes(b))){
+    return a + b + "ay"
+  } else{
+    return str + "ay"
   }
 }
